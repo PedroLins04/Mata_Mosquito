@@ -27,8 +27,9 @@ function randomP() {
     mosquito.style.top = posicaoY + 'px'
 
     document.body.appendChild(mosquito)
+
+    setTimeout(function () { mosquito.remove() }, 2000)
 }
-randomP()
 
 //TAMANHOS RANDOM
 function randomT() {

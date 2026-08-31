@@ -16,10 +16,10 @@
     position: absolute;
 }
 
-.ladoA{
+.ladoA {
     transform: scaleX(1);
 }
 
-.ladoB{
+.ladoB {
     transform: scaleX(-1);
 }
