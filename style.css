@@ -1,6 +1,17 @@
-.mosquito1{
-    height: 50px;
-    width: 50px;
+.mosquito1 {
+    height: 70px;
+    width: 70px;
     position: absolute;
 }
 
+.mosquito2 {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+}
+
+.mosquito3 {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+}
