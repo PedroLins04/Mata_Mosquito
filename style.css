@@ -15,3 +15,11 @@
     width: 140px;
     position: absolute;
 }
+
+.ladoA{
+    transform: scaleX(1);
+}
+
+.ladoB{
+    transform: scaleX(-1);
+}

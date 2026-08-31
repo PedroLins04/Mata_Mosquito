@@ -22,7 +22,7 @@ function randomP() {
     //criar elemento html
     var mosquito = document.createElement('img')
     mosquito.src = 'imagens/mosquito.png'
-    mosquito.className = randomT()
+    mosquito.className = randomT() + ' ' + lados()
     mosquito.style.left = posicaoX + 'px'
     mosquito.style.top = posicaoY + 'px'
 
@@ -43,5 +43,16 @@ function randomT() {
             return 'mosquito3'
     }
 }
-randomT()
+
+//LADOS DO MOSQUITO
+function lados() {
+    var classe = Math.floor(Math.random() * 2)
+
+    switch (classe) {
+        case 0:
+            return 'ladoA'
+        case 1:
+            return 'ladoB'
+    }
+}
 
