@@ -19,7 +19,7 @@ function randomP() {
 
         //controle de vidas
         if (vidas <= 0) {
-            alert('GAME-OVER')
+            window.location.href = 'fim_de_jogo.html'
         }
         else {
             document.getElementById('v' + vidas).src = 'imagens/coracao_vazio.png'
@@ -27,8 +27,8 @@ function randomP() {
         }
     }
 
-    var posicaoX = Math.floor(Math.random() * largura) - 90
-    var posicaoY = Math.floor(Math.random() * altura) - 90
+    var posicaoX = Math.floor(Math.random() * (largura - 90))
+    var posicaoY = Math.floor(Math.random() * (altura - 90))
 
     posicaoX = posicaoX < 0 ? 0 : posicaoX
     posicaoY = posicaoY < 0 ? 0 : posicaoY
