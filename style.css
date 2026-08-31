@@ -1,3 +1,29 @@
+body{
+    background-image: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.painel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 190px;
+    padding: 15px;
+    background-color: #ffffff8c;
+    border-radius: 8px;
+}
+
+.vidas{
+    float: left;
+}
+
+.tempo{
+    float: left;
+    font-size: 20px;
+}
+
 .mosquito1 {
     height: 70px;
     width: 70px;
