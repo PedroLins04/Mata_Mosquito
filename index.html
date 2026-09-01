@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function iniciarJogo() {
+            var nivel = document.getElementById('nivel').value
+
+            if (nivel === '') {
+                alert('Selecione uma dificuldade para iniciar o jogo')
+                return false
+            }
+
+            window.location.href = 'app.html?' + nivel
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!--IMAGEM-->
+    <main class="container">
+        <div class="row min-vh-50% mb-0">
+            <div class="col align-self-center">
+
+                <div class="d-flex justify-content-center btn-lg">
+                    <img src="imagens/game.png">
+                </div>
+
+            </div>
+        </div>
+
+        <!--BOTÕES-->
+        <div class="row mt-0">
+            <div class="col align-self-center">
+
+                <div class="d-flex flex-column align-items-center">
+
+                    <!--DIFICULDADE-->
+                    <select id="nivel" class="form-select mb-3" style="width: fit-content;" aria-label="Dificuldade">
+                        <option selected value="">Selecionar dificuldade</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Difícil">Difícil</option>
+                        <option value="Predador">Predador natural</option>
+                    </select>
+
+                    <!--JOGAR-->
+                    <button type="button" class="btn btn-primary text-white fw-bold btn-lg"
+                        onclick="iniciarJogo()">JOGAR</button>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
