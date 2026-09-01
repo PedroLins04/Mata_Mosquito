@@ -3,7 +3,22 @@ var altura
 var largura
 var vidas = 3
 var tempo = 15
+var criaMosquitoTempo = 1500
 
+//DIFICULDADE
+var nivel = window.location.search
+nivel = nivel.replace('?', '')
+
+
+if (nivel === 'normal') {
+    criaMosquitoTempo = 1500
+} else if (nivel === 'dificil') {
+    criaMosquitoTempo = 1000
+} else {
+    criaMosquitoTempo = 750
+}
+
+//TAMANHO
 function ajustarTamanho() {
     altura = window.innerHeight
     largura = window.innerWidth
