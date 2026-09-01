@@ -15,18 +15,19 @@
 
 
     <div class="painel">
-        <div class="vidas"> 
+        <div class="vidas">
             <img id="v1" src="imagens/coracao_cheio.png">
             <img id="v2" src="imagens/coracao_cheio.png">
             <img id="v3" src="imagens/coracao_cheio.png">
         </div>
 
-        <div class="tempo">Tempo Restante: ?</div>
+        <div class="tempo">Tempo Restante: <span id="cronometro"></span></div>
     </div>
 
 
     <script>
-        setInterval(function () { randomP() }, 1500)
+        document.getElementById('cronometro').innerHTML = tempo
+        var criamosquito = setInterval(function () { randomP() }, 1500)
     </script>
 </body>
 

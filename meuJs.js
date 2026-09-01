@@ -2,6 +2,7 @@
 var altura
 var largura
 var vidas = 3
+var tempo = 15
 
 function ajustarTamanho() {
     altura = window.innerHeight
@@ -9,6 +10,20 @@ function ajustarTamanho() {
     console.log(largura, altura)
 }
 ajustarTamanho()
+
+//CRONOMETRO
+var cronometro = setInterval(function () {
+
+    tempo -= 1
+
+    if (tempo == 0) {
+        window.location.href = 'vitoria.html'
+        clearInterval(cronometro)
+        clearInterval(criamosquito)
+    } else {
+        document.getElementById('cronometro').innerHTML = tempo
+    }
+}, 1000)
 
 //POSIÇÃO RANDOM
 function randomP() {
