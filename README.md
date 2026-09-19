@@ -1,6 +1,8 @@
 # Mata Mosquito
 
-Jogo feito em **HTML, CSS, JavaScript e Bootstrap5**, onde o objetivo é acertar e eliminar os mosquitos sem perder vida enquanto o tempo está rodando. Desenvolvido como projeto de estudo.
+**Aplicação web interativa** que simula um jogo de sobrevivência contra o tempo, com controle dinâmico de níveis de
+dificuldade e contagem de vidas. Implementa manipulação do DOM em tempo real e conceitos de POO via **JavaScript**
+para geração randômica de elementos.
 
 ## Como jogar
 
